@@ -125,7 +125,9 @@ sqlmap -u http://overflow.htb/home/logs.php?name=admin --cookie="auth=BAitGdYuup
 
 ![image](https://user-images.githubusercontent.com/73962599/150018716-5ffd61c6-e585-4892-83cb-756b64f9344a.png)
 
-* By zdekodować plik zaszyfrowany xor'em należy go zaszyfrować jeszcze raz. Można użyć do tego jeszcze raz pliku `file_encrypt` lub użyć innej funkcji szyfrującej. Zdecydowano się na drugie rozwiązanie
+* By zdekodować plik zaszyfrowany xor'em należy go zaszyfrować jeszcze raz. Można użyć do tego jeszcze raz pliku `file_encrypt` lub użyć innej funkcji szyfrującej. Zdecydowano się na drugie rozwiązanie. Klucz szyfrujący `0x9b` również można odczytać z funkcji `encrypt()`
+
+![image](https://user-images.githubusercontent.com/73962599/150538245-2fbd04ad-911b-4564-81b2-5d309a997c71.png)
 
 ![image](https://user-images.githubusercontent.com/73962599/150020639-fb07c6fa-cf87-499f-a5ee-90080c4d7f70.png)
 
