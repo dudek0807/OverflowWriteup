@@ -98,7 +98,11 @@ sqlmap -u http://overflow.htb/home/logs.php?name=admin --cookie="auth=BAitGdYuup
 
 ![image](https://user-images.githubusercontent.com/73962599/149638681-05deb309-bd67-4a33-9636-aead01f67f48.png)
 
-* W katalogu `/opt` znajdował się również folder `file_encrypt`, w którym był plik binarny o tej samej nazwie. Z racji braku pamięci na maszynie overflow pobrano ten plik w celu zbadania go za pomocą narzędzia `ghirda`
+* Po dostaniu się do użytkownika tester w jego katalogu domowym znajduje się rówież jego flaga w pliku user.txt
+
+![image](https://user-images.githubusercontent.com/73962599/150569742-8a95a672-236c-4a50-a89e-f1ac6ebda0b6.png)
+
+* W katalogu `/opt` znajdował się również folder `file_encrypt`, w którym był plik binarny o tej samej nazwie. Z racji braku pamięci na maszynie overflow pobrano ten plik w celu zbadania go za pomocą narzędzia `ghidra`
 
 ![image](https://user-images.githubusercontent.com/73962599/149639302-4bc70192-1658-4742-9278-c959fc222540.png)
 
